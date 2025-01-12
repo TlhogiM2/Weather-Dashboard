@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body>
+  <div class="container">
+    <div class="top-bar"> 
+      <div class="theme-toggle">
+        <i class="fas fa-sun" id="theme-icon"></i> 
+      </div>
+      <select id="language-select">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+        </select>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" id="city-input" placeholder="Search for a city">
+      <button id="search-button" aria-label="Search"><i class="fas fa-search"></i></button>
+      <button id="refresh-button" aria-label="Refresh"><i class="fas fa-sync-alt"></i></button>
+    </div>
+
+    <div class="weather-info">
+      <div class="current-weather">
+        <div class="city-name" id="city"></div>
+        <div class="temperature" id="temperature"></div>
+        <div class="condition" id="condition"></div>
+        <div class="high-low" id="high-low"></div>
+      </div>
+
+      <div class="details">
+        <div class="detail">
+          <i class="fas fa-wind"></i>
+          <span id="wind-speed"></span>
+        </div>
+        <div class="detail">
+          <i class="fas fa-tint"></i>
+          <span id="humidity"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="weekly-forecast"></div>
+    <div class="loader">
+      <div class="spinner"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
