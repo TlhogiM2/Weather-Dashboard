@@ -19,5 +19,5 @@ Technologies Used
 •	OpenWeatherMap API
 
 Deployment
-This application is deployed on Netlify. You can access it here: [Deployment Link]
+This application is deployed on Vercel. You can access it here: https://weather-dashboard-ivory-psi.vercel.app/
 
